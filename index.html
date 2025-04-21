@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 3.cqw;
+            margin: 4;
+            padding: 60px;
+            color: #3498db;
+            background-color: #f2f2f2;
+        }
+        .resume-container {
+            max-width: 2000px;
+            margin: 0 auto;
+            background-color: #ddd;
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0.1,0.2,0.3,0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.2em;
+            border-bottom: 3px solid #f2f2f2;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        h2 {
+            font-size: 1.6em;
+            background-color: #3498db;
+            padding: 12px 15px;
+            border-left: 5px solid #f9f9f9;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+            color: #ddd;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            font-size: 1.05em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            width: 15%;
+            font-weight: bold;
+        }
+        .fixed-value {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+            height: 120px;
+            resize: vertical;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+        .photo-preview {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        .skills-list {
+            margin: 20px 0;
+            padding-left: 20px;
+        }
+        .skills-list li {
+            margin-bottom: 10px;
+            font-size: 1.05em;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .project-item, .evaluation-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .project-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .resume-container {
+                padding: 25px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 2.0em;
+            }
+            table {
+                font-size: 1.0em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <h1>个人简历</h1>
+        
+        <div class="section">
+            <h2>基本信息</h2>
+            <table>
+                <tr>
+                    <th>姓名</th>
+                    <td class="fixed-value">卜家豪</td>
+                    <th>性别</th>
+                    <td class="fixed-value">男</td>
+                    <th>年龄</th>
+                    <td class="fixed-value">19</td>
+                    <td rowspan="2" class="photo-container">
+                        <!-- 直接嵌入照片 -->
+                        <img src="35.jpg" class="photo-preview" alt="个人照片">
+                    </td>
+                </tr>
+                <tr>
+                    <th>籍贯</th>
+                    <td class="fixed-value">泰安市</td>
+                    <th>联系电话</th>
+                    <td class="fixed-value">17667110231</td>
+                    <th>电子邮箱</th>
+                    <td class="fixed-value">1091366945@qq.com</td>
+                </tr>
+                <tr>
+                    <th>学历</th>
+                    <td class="fixed-value">高中</td>
+                    <th>健康状况</th>
+                    <td class="fixed-value">良好</td>
+                    <th>婚姻状况</th>
+                    <td class="fixed-value">未婚</td>
+                </tr>
+                <tr>
+                    <th>求职意向</th>
+                    <td class="fixed-value">软件工程师</td>
+                    <th>专业</th>
+                    <td class="fixed-value">软件工程</td>
+                    <th>毕业院校</th>
+                    <td class="fixed-value">鲁东大学</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>技能证书</h2>
+            <h3>个人特长与爱好</h3>
+            <ul class="skills-list">
+                <li>网页开发</li>
+                <li>六级证书</li>
+                <li>华为认证工程师</li>
+                <li>电工证</li>
+                <li>看书（业余爱好）</li>
+                <li>篮球（省队成员）</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>项目经历</h2>
+            <div class="project-item">
+                <div class="project-title">在线学习平台的开发</div>
+                <textarea readonly>
+- 参与需求分析，与产品经理和客户沟通，明确平台的功能需求和性能要求，整理出详细的需求文档。
+ 
+- 负责课程管理模块的设计与开发，包括课程的添加、删除、修改、查询功能，以及课程分类和搜索功能的实现。使用Java语言和Spring框架搭建后端服务，通过MySQL数据库存储课程相关数据。
+ 
+- 与前端开发人员协作，完成课程展示页面的接口设计与联调，确保前后端数据交互的准确性和稳定性。
+ 
+- 参与系统测试和用户验收测试，及时修复测试过程中发现的漏洞和问题，优化系统性能，提高平台的响应速度和稳定性。
+                </textarea>
+            </div>
+            <div class="project-item">
+                <div class="project-title">企业资源管理系统</div>
+                <textarea readonly>
+- 对原有库存管理模块进行详细的代码审查和功能梳理，分析存在的问题和不足。
+ 
+- 采用新的技术框架，如Spring Boot和MyBatis，对库存管理模块进行重新开发，优化数据库设计，提高数据存储和查询效率。
+ 
+- 实现库存盘点、库存预警、出入库管理等功能的优化，增加了库存数据的实时统计和分析功能，为企业决策提供准确的数据支持。
+ 
+- 与其他模块的开发人员密切协作，确保库存管理模块与采购、销售等模块的数据交互准确无误，完成系统的集成测试和联调。
+                </textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>自我评价</h2>
+            <div class="evaluation-item">
+                <textarea readonly>
+作为一名软件工程师，我具备扎实的技术功底与丰富的项目实践经验，熟练掌握Java/Python/C++等开发语言，精通Spring Boot、Django等主流框架，熟悉MySQL、Redis等数据库及微服务架构。在多个项目中主导或参与核心模块开发，如在线学习平台的课程管理系统、企业ERP库存模块升级等，能够独立完成需求分析、系统设计到代码实现的全流程工作，并擅长通过性能优化提升系统响应效率
+                </textarea>
+            </div>
+            <div class="evaluation-item">
+                <textarea readonly>
+注重工作细节与代码质量，严格遵循代码规范与开发流程，确保交付成果的稳定性与可维护性。未来希望继续深耕软件开发领域，将技术能力与业务需求深度结合，为团队和企业创造更大价值。
+                </textarea>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
